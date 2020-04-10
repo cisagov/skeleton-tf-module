@@ -92,6 +92,12 @@ for step-by-step instructions on how to start a new repository from
 a skeleton. This will save you time and effort when configuring a
 new repository!
 
+## Notes ##
+
+Running `pre-commit` requires running `terraform init` in every directory that
+contains Terraform code. In this repository these are the main directory and the
+`examples/default_vpc` directory.
+
 ## Contributing ##
 
 We welcome contributions!  Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for
