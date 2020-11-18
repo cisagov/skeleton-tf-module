@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: 3.9
       - id: setup-go
-        uses: mcdonnnj/setup-go@main
+        uses: mcdonnnj/setup-go@improvement/add_go-version_output
         with:
           go-version: '1.15'
       - name: Store installed Python version
