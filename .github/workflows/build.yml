@@ -156,6 +156,10 @@ jobs:
           go build \
           -C /tmp/terraform-docs \
           -o $(go env GOPATH)/bin/terraform-docs
+      - name: Output PATH for diagnostics
+        run: echo $PATH
+      - name: Output terraform-docs binary used
+        run: command -v terraform-docs
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
